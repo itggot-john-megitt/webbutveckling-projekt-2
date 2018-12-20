@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    background-image: url(../img/ZOcLM7h.jpg);
+}
+
+header{
+    background-image: url(../img/elf-clipart-santas-workshop-9.jpg);
+    margin: 5%;
+    height: 20vh;
+    border-radius: 20px;
+}
+
+.logo{
+ background: url(../img/wee.png) no-repeat;
+ height:100%;
+ width: 40%;
+}
+
+.wrapper{
+    height: 80vh;
+    z-index: 0;
+    margin: 0;
+}
