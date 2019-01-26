@@ -4,20 +4,79 @@ body{
 }
 
 header{
-    background-image: url(../img/elf-clipart-santas-workshop-9.jpg);
-    margin: 5%;
-    height: 20vh;
+    margin: 3%;
+    height: 10vh;
     border-radius: 20px;
+    display: flex;
+    
+    background-image: url(../img/deep2.png); 
+    -webkit-box-shadow: 11px 21px 34px -13px rgba(0,0,0,1);
+    -moz-box-shadow: 11px 21px 34px -13px rgba(0,0,0,1);
+    box-shadow: 11px 21px 34px -13px rgba(0,0,0,1);
+    
+}
+.show{
+    width:80%;
+    height:100%;
+    background-color: aqua;
+    z-index:10;
+}
+.menubutton{
+    background-image: url(../img/baseline_menu_black_18dp.png); 
+    background-size: 100%;
+    height: 5vh;
+    width: 10%;
+    margin-right: 0; 
+    justify-self: right; 
+    z-index: 10;
+    border-radius: 5px;     
+    position: absolute;
+    top: 4vh;
+    left: 83vw;
+}
+
+.visible{
+    background-color: black;
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+    z-index:0;
+    position: fixed;
+    top:0;
+    left:0;
+    margin:10;
 }
 
 .logo{
- background: url(../img/wee.png) no-repeat;
- height:100%;
- width: 40%;
+    background: url(../img/wee.png);
+    background-size: 100%;
+    width: 40%;
+    margin:5px;
+    z-index: 0;
+    border-radius: 20px;
+
 }
 
 .wrapper{
-    height: 80vh;
+    height: 100vh;
+    width: 100vw;
     z-index: 0;
     margin: 0;
 }
+
+main{
+    margin:3%; 
+    background-color: wheat;
+    height: 200vh;
+    width: auto;
+    border-radius: 20px;
+    -webkit-box-shadow: 11px 21px 34px -13px rgba(0,0,0,1);
+    -moz-box-shadow: 11px 21px 34px -13px rgba(0,0,0,1);
+    box-shadow: 11px 21px 34px -13px rgba(0,0,0,1);
+    
+}
+/* @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){}
+    header{
+        height: 9vh;
+    }
+} */
