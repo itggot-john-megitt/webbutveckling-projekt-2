@@ -1,82 +1,543 @@
 body{
     margin: 0;
     background-image: url(../img/ZOcLM7h.jpg);
+    background-size: 100%;
+    width: 100vw;
+}
+
+html {
+    overflow-x: hidden;
+ }
+
+ .wrapper{
+    width: 100vw;
+    z-index: 0;
+    margin: 0;
+    position: absolute;
+    top: 0px;
+}
+
+.wrapper2{
+    width: 100vw;
+    z-index: 0;
+    margin: 0;
+    position: absolute;
+    top: 0px;
+    height: 100%;
 }
 
 header{
-    margin: 3%;
+    margin: 1%;
     height: 10vh;
     border-radius: 20px;
     display: flex;
+    background-image: url(../img/elf-clipart-santas-workshop-9.jpg); 
+    background-size:20%;
+    -webkit-box-shadow: 11px 21px 34px -13px rgba(0,0,0,0.5);
+    -moz-box-shadow: 11px 21px 34px -13px rgba(0,0,0,0.5);
+    box-shadow: 11px 21px 34px -13px rgba(0,0,0,0.5);
     
-    background-image: url(../img/deep2.png); 
-    -webkit-box-shadow: 11px 21px 34px -13px rgba(0,0,0,1);
-    -moz-box-shadow: 11px 21px 34px -13px rgba(0,0,0,1);
-    box-shadow: 11px 21px 34px -13px rgba(0,0,0,1);
-    
-}
-.show{
-    width:80%;
-    height:100%;
-    background-color: aqua;
-    z-index:10;
-}
-.menubutton{
-    background-image: url(../img/baseline_menu_black_18dp.png); 
-    background-size: 100%;
-    height: 5vh;
-    width: 10%;
-    margin-right: 0; 
-    justify-self: right; 
-    z-index: 10;
-    border-radius: 5px;     
-    position: absolute;
-    top: 4vh;
-    left: 83vw;
 }
 
-.visible{
+.menubutton{
+    background-image: url(../img/baseline_menu_black_18dp.png) ; 
+    background-size: 100%;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 5px;  
+    position: absolute; 
+    right: 3.5vh;
+    top: 3.5vh;
+}
+
+.menuwrapper{
+    position: sticky;
+}
+
+.sidenav{
     background-color: black;
-    opacity: 0.4;
+    position: fixed;
+    top:0;
+    right:0;
+    transition: 1s;
+    height: 100vh;
+    width:0;
+    z-index: 15;
+    opacity: 0.8;
+    color: white;
+    /* border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; */
+}
+
+.visibleMenubutton2{
+    background-image: url(../img/PICOL_Cancel.jpg) ; 
+    background-size: 100%;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 5px;
+    position: absolute; 
+    right: 3.5vh;
+    top: 3.5vh;
+    transition: 1s;
+}
+
+.visibleFadeLayer{
+    background-color: black;
+    opacity: 0;
+    pointer-events: none;
     height: 100%;
     width: 100%;
-    z-index:0;
+    z-index:10;
     position: fixed;
     top:0;
     left:0;
     margin:10;
+    transition: 1s;
 }
 
 .logo{
-    background: url(../img/wee.png);
+    background: url(../img/logo.png) no-repeat;
     background-size: 100%;
-    width: 40%;
-    margin:5px;
+    height: 9vh;
+    width: 23vh;
+    margin: 0.5vh;
     z-index: 0;
     border-radius: 20px;
 
-}
-
-.wrapper{
-    height: 100vh;
-    width: 100vw;
-    z-index: 0;
-    margin: 0;
 }
 
 main{
-    margin:3%; 
-    background-color: wheat;
-    height: 200vh;
-    width: auto;
+    margin: 0%; 
+    /* background-color: wheat; */
+    /* height: 100vh; */
     border-radius: 20px;
-    -webkit-box-shadow: 11px 21px 34px -13px rgba(0,0,0,1);
+    width:100%;
+    /* -webkit-box-shadow: 11px 21px 34px -13px rgba(0,0,0,1);
     -moz-box-shadow: 11px 21px 34px -13px rgba(0,0,0,1);
-    box-shadow: 11px 21px 34px -13px rgba(0,0,0,1);
-    
+    box-shadow: 11px 21px 34px -13px rgba(0,0,0,1);    */
 }
-/* @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){}
-    header{
-        height: 9vh;
+
+.mainbox1{
+    background-image: url(../img/istockphoto-155908001-612x612.jpg);
+    background-size: 100%;
+    background-position: center;
+    /* width: 98vw; */
+    height: 25vh;
+    margin: 1%;
+    margin-bottom: 0;
+    border-radius: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    -webkit-box-shadow: 11px 21px 34px -13px rgba(0,0,0,0.5);
+    -moz-box-shadow: 11px 21px 34px -13px rgba(0,0,0,0.5);
+    box-shadow: 11px 21px 34px -13px rgba(0,0,0,0.5);
+}
+
+.mainbox_tomten{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 24vh 24vh;
+    grid-template-areas: 
+    "rubrik tomtebild"
+    "rubrik tomtebild2";
+    width: 98%;
+    height: 65vh;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+}
+
+.mainbox_nissar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 24vh 24vh;
+    grid-template-areas: 
+    "rubrik nissebild"
+    "rubrik nissebild2";
+    width: 98%;
+    height: 65vh;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+}
+
+.mainbox_terapi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 36vh 24vh;
+    grid-template-areas: 
+    "rubrik terapibild"
+    "rubrik terapibild2";
+    width: 98%;
+    height: 65vh;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+}
+
+.mainbox_linje{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 24vh 24vh;
+    grid-template-areas: 
+    "rubrik linjebild"
+    "rubrik linjebild2";
+    width: 98%;
+    height: 65vh;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+}
+
+#bild{
+    background-size: 100%;
+    background-position: center;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    line-height: 10vh;
+    height: 90%;
+    margin: 2%;
+}
+
+.rubrik{
+    grid-area: rubrik;
+    text-align: center;
+    padding: 1vh;
+}
+
+.tomtebild{
+    background-image: url(../img/maxresdefault.jpg);
+    grid-area: tomtebild;
+}
+
+.tomtebild2{
+    background-image: url(../img/santa-claus-adobestock.jpegw630.jpeg);
+    grid-area: tomtebild2;
+}
+
+.nissebild{
+    background-image: url(../img/regel.png);
+    grid-area: nissebild;
+}
+
+.nissebild2{
+    background-image: url(../img/rättigheter.png);
+    grid-area: nissebild2;
+}
+
+.terapibild{
+    background-image: url(../img/Namnlös.png);
+    grid-area: terapibild;
+}
+
+.terapibild2{
+    background-image: url(../img/sad-christmas-elf-getting-hit-footage-086775941_prevstill.jpeg);
+    grid-area: terapibild2;
+}
+
+.linjebild{
+    background-image: url(../img/penguin.png);
+    grid-area: linjebild;
+}
+
+.linjebild2{
+    background-image: url(../img/Sad-elf.jpg);
+    grid-area: linjebild2;
+    background-position: top;
+}
+
+.textbox1{
+    margin-left: 5%;
+    margin-right: 35%;
+    height:auto;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.65);
+}
+
+.link1{
+    background-color: orange;
+    height: 5vh;
+    width: 35%;
+    border-radius: 100px; 
+    justify-self: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 5vh;
+    margin-top:20px;
+    margin-left:5%;
+    -webkit-box-shadow: 11px 21px 34px -13px rgba(0,0,0,0.5);
+    -moz-box-shadow: 11px 21px 34px -13px rgba(0,0,0,0.5);
+    box-shadow: 11px 21px 34px -13px rgba(0,0,0,0.5);
+}
+
+.boxwrapper{
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 12vh 12vh 12vh 12vh;
+    grid-template-areas: 
+    "top"
+    "left"
+    "right"
+    "bottom";
+    width:99%;
+    /* height: 50vh; */
+    margin: 0.5%;
+}
+
+#boxes{
+    background-size: 100%;
+    background-position: center;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding-left: 2vw;
+    margin: 0.5vw;
+    line-height: 10vh;
+    height:90%
+    /* margin-top: 1vw; */
+}
+
+.box{
+    grid-area: top;
+    background-image: url(../img/maxsneedefault.jpg);
+}
+
+.box2{
+    grid-area: left;
+    background-image: url(../img/regel.png);
+}
+
+.box3{
+    grid-area: right;
+    background-image: url(../img/new.png);
+    background-position: top;
+}
+
+.box4{
+    grid-area: bottom;
+    background-image: url(../img/penguin.png)
+}
+
+.box5{
+    grid-area: left2;
+}
+
+.box6{
+    grid-area: right2;
+}
+
+footer{
+    /* position: absolute; */
+    /* bottom: 0; */
+    height:20vh;
+    background-image: url(../img/1.jpg);
+    background-size:100%;
+    width:100%;
+    border-top-width: 1px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-color: black;
+    border-style: solid;
+}
+
+.footer2{
+    position: absolute;
+    bottom: 0;
+    height:20vh;
+    background-image: url(../img/1.jpg);
+    background-size:100%;
+    width:100%;
+    border-top-width: 1px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-color: black;
+    border-style: solid;
+}
+
+.contact{
+    margin:3vh;
+    line-height: 3vh;
+}
+
+.light_line{ 
+    width:100%; 
+    height:1px; 
+    background: #fff 
+}
+
+.categories{
+    margin-top: 7vh;
+    padding: 2vh;
+    line-height: 7vh;
+}
+
+p{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    font-size: 1rem;
+    color:white;
+}
+
+h2{
+    font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    font-size: 1rem;
+    color:black;
+}
+
+h3{
+    font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
+    text-decoration: none;
+    margin: 2vh;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    color:White;
+}
+h4{
+    font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
+    text-decoration: none;
+    margin: 2vh;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    color:black;
+}
+
+
+p{
+    font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    font-size: 0.9rem;
+}
+/* font-family: 'Source Sans Pro', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+    p{
+        font-size: 1.1rem;
     }
-} */
+    h1{
+        font-size: 1.6rem
+    }
+    h2{
+        font-size: 1.6rem
+    }
+    h3{
+        font-size: 1.8rem
+    }
+    h4{
+        font-size: 1.8rem
+    }
+    .textbox1{
+        margin-right: 45%;
+    }
+    .link1{
+        width: 25%
+    }
+    .mainbox1{
+        height: 35vh;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation:landscape){
+    p{
+        font-size: 1.2rem;
+    }
+
+    h1{
+        font-size: 1.6rem;
+    }
+    h2{
+        font-size: 1.2rem
+    }
+    h3{
+        font-size: 2rem
+    }
+    h4{
+        font-size: 1.8rem
+    }
+    main{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .textbox1{
+        margin-right: 55%;
+    }
+
+    .link1{
+        width: 20%
+    }
+
+    .mainbox1{
+        height: 45vh;
+    }
+    .boxwrapper{
+    grid-template-rows: 16vh 16vh;
+    grid-template-areas: 
+    "top left"
+    /* "left" */
+    "bottom right";
+    /* "bottom"; */
+    }
+}
+
+@media only screen and (min-device-width : 1025px){
+    p{
+        font-size: 1.2rem;
+    }
+
+    h1{
+        font-size: 1.8rem;
+    }
+    h2{
+        font-size: 1.2rem
+    }
+    h3{
+        font-size: 1.8rem
+    }
+    h4{
+        font-size: 1.8rem
+    }
+    main{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .textbox1{
+        margin-right: 55%;
+    }
+
+    .link1{
+        width: 20%
+    }
+
+    .mainbox1{
+        height: 45vh;
+    }
+    .boxwrapper{
+        grid-template-rows: 16vh 16vh;
+        grid-template-areas: 
+        "top left"
+        "bottom right";
+    }
+    .sidenav{
+        max-width: 40%;
+    }
+}

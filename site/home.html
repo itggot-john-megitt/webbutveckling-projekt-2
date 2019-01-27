@@ -6,21 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nissars rätt i samhället</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper"> 
-            <div class="menu"></div>
         <header>
-            <div class="menubutton" onclick="showMenu()"></div>
-            <div class="logo"></div>
-            <div class="fadeLayer"></div>
+            <a href="home.html">
+                <div class="logo"></div>
+            </a>            
         </header>
         <nav></nav>
-        <main></main>
-        <div class="topbox"></div>
-        <div class="box"></div>
-        <footer></footer>
+        <main>
+            <div class="mainbox1">
+                <div class="textbox1"> 
+                    <h1>Stöd oss med 100 kronor i månaden och var med i kampen för ett tryggt nissesamhälle.</h1>
+                </div>
+                <div class="link1">
+                    <a href="home.html">
+                        <p>Bli medlem idag</p>
+                    </a>
+                </div>                
+            </div>
+            <div class="boxwrapper">
+                <a href="tomten.html">
+                    <div class="box" id="boxes">
+                        <h2>Tomtens förtryck ></h2>
+                    </div>
+                </a>
+                <a href="nissar.html">
+                    <div class="box2" id="boxes">
+                        <h2>Nissars rättigheter ></h2>
+                    </div>
+                </a>
+                <a href="terapi.html">
+                    <div class="box3" id="boxes">
+                        <h2>Terapi ></h2>
+                    </div>
+                </a>
+                <a href="linje.html">
+                    <div class="box4" id="boxes">
+                        <h2>Hjälplinje ></h2>
+                    </div>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <div class="contact">
+                <p>Tack för att du besöker NRIS</p>
+                <p>Address: Nordpolen</p>
+                <p>Telefonnummer: 555-5555</p>
+                <p>Mailaddress: nris@nordpolen.np</p>
+            </div>
+        </footer>
     </div>
     <script src="main.js"></script>
+    <div class="menuwrapper">
+        <div id="myFadeLayer" class="visibleFadeLayer"></div>
+        <div id="mySidenav" class="sidenav">
+            <div class="categories">
+                <a href="home.html">
+                    <h3>Hem </h3>
+                </a>
+                <div class="light_line"></div>
+                <a href="home.html">
+                    <h3>Tomtens förtryck</h3>   
+                </a>
+                <div class="light_line"></div>
+                <a href="nissar.html">
+                    <h3>Nissars rättigheter</h3>    
+                </a>
+                <div class="light_line"></div>
+                <a href="terapi.html">
+                    <h3>Terapi</h3>
+                </a>
+                <div class="light_line"></div>
+                <a href="linje.html">
+                    <h3>Hjälplinje</h3>
+                </a>
+            </div>
+            <div id="button" class="menubutton" onclick="showMenu()"></div>
+            <div id="button2" class="menubutton2" onclick="closeMenu()"></div>
+        </div>
+    </div>
 </body>
 </html>
