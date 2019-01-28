@@ -269,7 +269,7 @@ main{
     /* justify-self: center; */
     justify-content: center;
     text-align: center;
-    /* line-height: 5vh; */
+    line-height: 5vh;
     margin-top:20px;
     margin-left:5%;
     -webkit-box-shadow: 11px 21px 34px -13px rgba(0,0,0,0.5);
@@ -433,7 +433,7 @@ p{
 h5{
     font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
     text-decoration: none;
-    margin: 0.1rem;
+    margin: 0.0rem;
     font-size: 0.7rem;
 }
 /* font-family: 'Source Sans Pro', sans-serif; */
