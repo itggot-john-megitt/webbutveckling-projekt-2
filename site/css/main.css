@@ -192,7 +192,7 @@ main{
 }
 
 #bild{
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     border-radius: 20px;
     border-style: solid;
@@ -264,11 +264,12 @@ main{
     background-color: orange;
     height: 5vh;
     width: 35%;
+    align-items: center;
     border-radius: 100px; 
-    justify-self: center;
+    /* justify-self: center; */
     justify-content: center;
     text-align: center;
-    line-height: 5vh;
+    /* line-height: 5vh; */
     margin-top:20px;
     margin-left:5%;
     -webkit-box-shadow: 11px 21px 34px -13px rgba(0,0,0,0.5);
@@ -425,8 +426,15 @@ h4{
 p{
     font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
     text-decoration: none;
-    margin: 0;
-    font-size: 0.9rem;
+    /* margin: 0; */
+    font-size: 0.7rem;
+}
+
+h5{
+    font-family: 'Source Sans Pro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
+    text-decoration: none;
+    margin: 0.1rem;
+    font-size: 0.7rem;
 }
 /* font-family: 'Source Sans Pro', sans-serif; */
 /* font-family: 'Open Sans', sans-serif; */
@@ -446,6 +454,9 @@ p{
     h4{
         font-size: 1.8rem
     }
+    h5{
+        font-size: 1.1rem;
+    }
     .textbox1{
         margin-right: 45%;
     }
@@ -459,20 +470,23 @@ p{
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation:landscape){
     p{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     h1{
         font-size: 1.6rem;
     }
     h2{
-        font-size: 1.2rem
+        font-size: 1.2rem;
     }
     h3{
-        font-size: 2rem
+        font-size: 2rem;
     }
     h4{
-        font-size: 1.8rem
+        font-size: 1.8rem;
+    }
+    h5{
+        font-size: 1.1rem;
     }
     main{
         width: 80%;
@@ -515,6 +529,9 @@ p{
     }
     h4{
         font-size: 1.8rem
+    }
+    h5{
+        font-size: 1.2rem
     }
     main{
         width: 70%;
