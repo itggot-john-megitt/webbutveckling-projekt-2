@@ -1,7 +1,7 @@
 body{
     margin: 0;
     background-image: url(../img/ZOcLM7h.jpg);
-    background-size: 100%;
+    background-size: cover;
     width: 100vw;
 }
 
@@ -41,7 +41,7 @@ header{
 
 .menubutton{
     background-image: url(../img/baseline_menu_black_18dp.png) ; 
-    background-size: 100%;
+    background-size: cover;
     height: 5vh;
     width: 5vh;
     border-radius: 5px;  
@@ -71,7 +71,7 @@ header{
 
 .visibleMenubutton2{
     background-image: url(../img/PICOL_Cancel.jpg) ; 
-    background-size: 100%;
+    background-size: cover;
     height: 5vh;
     width: 5vh;
     border-radius: 5px;
@@ -97,7 +97,7 @@ header{
 
 .logo{
     background: url(../img/logo.png) no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 9vh;
     width: 23vh;
     margin: 0.5vh;
@@ -119,7 +119,7 @@ main{
 
 .mainbox1{
     background-image: url(../img/istockphoto-155908001-612x612.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     /* width: 98vw; */
     height: 25vh;
@@ -266,10 +266,10 @@ main{
     width: 35%;
     align-items: center;
     border-radius: 100px; 
-    /* justify-self: center; */
     justify-content: center;
     text-align: center;
     line-height: 5vh;
+    vertical-align: middle;
     margin-top:20px;
     margin-left:5%;
     -webkit-box-shadow: 11px 21px 34px -13px rgba(0,0,0,0.5);
@@ -279,7 +279,6 @@ main{
 
 .boxwrapper{
     display: grid;
-    /* grid-template-columns: 1fr; */
     grid-template-rows: 12vh 12vh 12vh 12vh;
     grid-template-areas: 
     "top"
@@ -287,12 +286,11 @@ main{
     "right"
     "bottom";
     width:99%;
-    /* height: 50vh; */
     margin: 0.5%;
 }
 
 #boxes{
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     border-radius: 20px;
     border-style: solid;
@@ -302,7 +300,6 @@ main{
     margin: 0.5vw;
     line-height: 10vh;
     height:90%
-    /* margin-top: 1vw; */
 }
 
 .box{
@@ -335,11 +332,9 @@ main{
 }
 
 footer{
-    /* position: absolute; */
-    /* bottom: 0; */
     height:20vh;
     background-image: url(../img/1.jpg);
-    background-size:100%;
+    background-size:cover;
     width:100%;
     border-top-width: 1px;
     border-left-width: 0;
@@ -354,7 +349,7 @@ footer{
     bottom: 0;
     height:20vh;
     background-image: url(../img/1.jpg);
-    background-size:100%;
+    background-size:cover;
     width:100%;
     border-top-width: 1px;
     border-left-width: 0;
